@@ -47,7 +47,10 @@ only on master node runs this command
  # You will get a command to join the Worker Nodes after running kubeadm init on master node 
 
  Now login to the workers node and run the command that you get from master node
- for example: kubeadm join 10.0.1.201:6443 --token hqsq0f.8vjj4rpzrz1bfkzh \
+ 
+ for example: 
+ 
+ kubeadm join 10.0.1.201:6443 --token hqsq0f.8vjj4rpzrz1bfkzh \
         --discovery-token-ca-cert-hash sha256:449b526a1345371f4dacc8c8212405c28335c7f59d3b87accb7ef983287df573 
 
 Finally check the nodes joined or not:
@@ -59,6 +62,9 @@ kubectl get nodes
 output will be like this :
 
 ubuntu@ip-10-0-1-201:~$ kubectl get nodes
+
+
+
 NAME            STATUS   ROLES           AGE     VERSION
 ip-10-0-1-109   Ready    <none>          8m50s   v1.29.15
 ip-10-0-1-201   Ready    control-plane   17m     v1.29.15
