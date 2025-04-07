@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
+
+# SSH or secrets
+*.pem
+*.key
+
+# OS junk
+.DS_Store
+*.swp
+
