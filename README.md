@@ -200,7 +200,7 @@ kubectl get pods -o=custom-columns=NAME:.metadata.name,NODE:.spec.nodeName
 
 #### Check pod log ####
 
-kubectl logs <pod-name>
+kubectl logs pod-name
 
 
 
